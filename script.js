@@ -34,6 +34,8 @@ drawBtn.addEventListener("click", () => {
 drawGrid(newGrid);
 })
 
+// ALL FUNCTIONS
+// Function to generate random background colors
 function randomColorDiv() {
  let letters = "0123456789ABCDEF";
  let color = "#";
@@ -43,6 +45,7 @@ function randomColorDiv() {
  return color;
 }
 
+// Function to create divs for grid
 function createGrid(newGrid) {
  gridBoard.innerHTML = "";
   for (let i = 0; i < newGrid; i++) {
@@ -55,6 +58,7 @@ function createGrid(newGrid) {
     }
     gridBoard.appendChild(rowDivs);
   }
+ // Random color generation on hover
   const colorChange = document.querySelectorAll(".square");
   colorChange.forEach((element) => {
    element.addEventListener("mouseover", (e) => {
@@ -63,6 +67,7 @@ function createGrid(newGrid) {
   });
 }
 
+// Erases color squares back to white
 function eraseGrid() {
  const colorChange = document.querySelectorAll(".square");
  colorChange.forEach((element) => {
@@ -72,6 +77,7 @@ function eraseGrid() {
  })
 }
 
+// Use after erase function/button to draw color squares
 function drawGrid() {
  const colorChange = document.querySelectorAll(".square");
  colorChange.forEach((element) => {
