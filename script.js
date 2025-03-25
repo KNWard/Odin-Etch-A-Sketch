@@ -62,3 +62,21 @@ function createGrid(newGrid) {
    })
   });
 }
+
+function eraseGrid() {
+ const colorChange = document.querySelectorAll(".square");
+ colorChange.forEach((element) => {
+  element.addEventListener("mouseover", (e) => {
+   e.target.style.backgroundColor = "white";
+  })
+ })
+}
+
+function drawGrid() {
+ const colorChange = document.querySelectorAll(".square");
+ colorChange.forEach((element) => {
+  element.addEventListener("mouseover", (e) => {
+   e.target.style.backgroundColor = randomColorDiv();
+  })
+ });
+}
