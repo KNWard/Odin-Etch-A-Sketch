@@ -8,3 +8,44 @@ body {
 h1 {
  font-size: 60px;
 }
+
+.buttons {
+ display: flex;
+}
+
+button {
+ margin: 10px;
+ padding: 10px;
+ height: 100px;
+ width: 100px;
+ font-size: 18px;
+ border: 1px solid #000;
+ border-radius: 50%;
+ cursor: pointer;
+}
+
+#container {
+ border: 1px solid black;
+ height: 700px;
+ width: 700px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.container div {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.row {
+ width: 100%;
+ height: auto;
+ display: flex;
+}
+
+.square {
+ border: 1px solid #dee2e6;
+ border-radius: 50%;
+ width: 100%;
+ height: auto;
+}
