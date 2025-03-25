@@ -33,3 +33,26 @@ eraseGrid(newGrid);
 drawBtn.addEventListener("click", () => {
 drawGrid(newGrid);
 })
+
+function randomColorDiv() {
+ let letters = "0123456789ABCDEF";
+ let color = "#";
+ for (let i = 0; i < 6; i++) {
+   color += letters[Math.floor(Math.random() * 16)];
+ }
+ return color;
+}
+
+function createGrid(newGrid) {
+ gridBoard.innerHTML = "";
+  for (let i = 0; i < newGrid; i++) {
+    const rowDivs = document.createElement("div");
+    rowDivs.classList.add("row");
+    for (let j = 0; j < newGrid; j++) {
+      const squareDivs = document.createElement("div");
+      squareDivs.classList.add("square");
+      rowDivs.appendChild(squareDivs);
+    }
+    gridBoard.appendChild(rowDivs);
+  }
+}
