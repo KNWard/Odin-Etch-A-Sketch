@@ -55,4 +55,10 @@ function createGrid(newGrid) {
     }
     gridBoard.appendChild(rowDivs);
   }
+  const colorChange = document.querySelectorAll(".square");
+  colorChange.forEach((element) => {
+   element.addEventListener("mouseover", (e) => {
+    e.target.style.backgroundColor = randomColorDiv();
+   })
+  });
 }
