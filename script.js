@@ -72,7 +72,7 @@ function eraseGrid() {
  const colorChange = document.querySelectorAll(".square");
  colorChange.forEach((element) => {
   element.addEventListener("mouseover", (e) => {
-   e.target.style.backgroundColor = "white";
+   e.target.style.backgroundColor = "#f7f5f5";
   })
  })
 }
