@@ -4,6 +4,8 @@
 
 This project was created for the The Odin Project Foundations course. The task was to create a sketchpad that allows a user to change the size of the grid and "paint" by using their mouse to hover over the users desired area.
 
+[Live Project View](https://knward.github.io/Odin-Etch-A-Sketch/)
+
 The overall task was to work on DOM manipulation skills and to follow assignment parameters:
 
 - Create a webpage with a 16x16 grid of square divs.
